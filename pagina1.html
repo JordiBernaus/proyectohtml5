@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jordi Bernaus</title>
+		<link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+			<h2>Lenguajes de marcas y sistemas de gestión de información</h2>
+		</header>
+			<nav>
+				<ul>
+					<li><a href="index.html">ASIR</a></li>
+					<li><a href="pagina1.html">LND</a></li>
+					<li><a href="pagina2.html">FUW</a></li>
+					<li><a href="pagina3.html">C.I.F.P. Majada Marcial</a></li>
+					<li><a href="pagina4.html">¿Alguna duda sobre el ciclo o el centro?</a></li>
+					<li><a href="pagina5.html">Hubicación</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h3 class="h3">¿Qué son los Lenguajes de Marcas?</h3>
+				<p class="txt">Son un lenguaje que permite codificar un documento, combinando
+				la información del texto con marcas o anotaciones relativas a a la estructura 
+				o a la forma de representar el propio texto.
+				</p>
+				<table class="tabla">
+					<tr>
+						<th colspan="3">Clasificación de los Lenguajes de Marcas</th>
+					</tr>
+					<tr>
+						<td><strong>Tipo</strong></td>
+						<td><strong>Descripción</strong></td>
+						<td><strong>Ejemplo</strong></td>
+					</tr>
+					<tr>
+						<td><strong>Lenguajes Orientados a Presentación</strong></td>
+						<td>Codifican como ha de presentarse el documento y son usados tradicionalmente
+						por los procesadores de texto.
+						Indican el formato del texto o tipografía, sin especificar su
+						estructura, por ejemplo: aumentar el tamaño de la fuente,centrar o cambiar 
+						a negrita.
+						El software que representa el documento debe interpretar el
+						código en el mismo orden en que aparece.</td>
+						<td>RTF (RichText Format), Docbook (derivados de SGML)</td>
+					</tr>
+					<tr>
+						<td><strong>Lenguajes Descriptivos</strong></td>
+						<td>Se usan para describir la estructura lógica del documento y la descripción
+						del contenido. Las marcas describen qué es lo que se está representando.
+						Las marcas no determinan el procesamiento del documento de manera fija, ya 
+						que dicho procesamiento se determina a partir de las necesidades concretas, 
+						y se beneficia de la estructura lógica del documento caracterizada a través 
+						de sus marcas.</td>
+						<td>SGML, XML</td>
+					</tr>
+					<tr>
+						<td><strong>Lenguajes Híbridos</strong></td>
+						<td>Son lenguajes que contienen marcas de los dos tipos anteriores 
+						indistintamente.</td>
+						<td>HTML, XHTML</td>
+					</tr>
+				</table>
+				<h3 class="h3">HTML (HyperText Markup Language, 1989)</h3>
+				<p class="txt">Es un lenguaje orientado expresamente para la presentación o visualización de 
+				información en la web
+				</p>
+				<table class="tabla2">
+					<tr>
+						<th>Ventajas</th>
+						<th>Desventajas</th>
+					</tr>
+					<tr>
+						<td class="tdsinborde">Es muy simple y sencillo de usar</td>
+						<td class="tdsinborde">Presenta información estática</td>
+					</tr>
+					<tr>
+						<td class="tdsinborde">No requiere herramientas especiales para su edición</td>
+						<td class="tdsinborde">Esta orientado funcionalmente a la representación de los datos
+						y no a su estructura</td>
+					</tr>
+					<tr>
+						<td class="tdsinborde">Esta muy difundido en la web</td>
+						<td class="tdsinborde">No es adecuando pata intercambio de datos (interactividad)</td>
+					</tr>
+					<tr>
+						<td class="tdsinborde"></td>
+						<td class="tdsinborde">No es extensible: no se puenden definir nuevas etiquetas</td>
+					</tr>
+				</table>
+				<h3>Código de ejemplo</h3>
+					<p class="txt">
+						<br>
+						&lt;HTML&gt;<br>
+							&lt;HEAD&gt;<br>
+								&lt;TITLE&gt;Mi primer documento HTML&lt;/TITLE&gt;<br>
+							&lt;/HEAD&gt;<br>
+							&lt;BODY&gt;<br>
+								&lt;P&gt;¡Hola mundo!&lt;/P&gt;<br>
+							&lt;/BODY&gt;<br>
+						&lt;/HTML&gt;<br>
+					</p>
+				<h3 class="h3">XML (Extensible Markup Language, 1996)</h3>
+					<p class="txt">Está diseñado para almacenar y transportar datos entre aplicaciones. Por eso, simplifica la
+					compartición de datos entre programas y la realización de cambios en las configuraciones de los
+					sistemas. Permite también crear otros lenguajes a partir de él, como el XHTML, por lo que se 
+					dice que es un metalenguaje.<br>
+					No existen etiquetas predefinidas, sino que es el usuario quien las crea. Se centra en qué son 
+					los datos (es un lenguaje descriptivo), mientras que el HTML se encarga de cómo se tienen que 
+					visualizar esos datos en un navegador. 
+				</p>
+				<br>
+				<h3>Código de ejemplo</h3> 
+				<br>
+				<p class="txt">
+					&lt;Edit_Mensaje&gt;<br>
+					&lt;Mensaje&gt;<br>
+					&lt;Remitente&gt;<br>
+					&lt;Nombre>Nombre del remitente&lt;/Nombre&gt;<br>
+					&lt;Mail> Correo del remitente &lt;/Mail&gt;<br>
+					&lt;/Remitente&gt;<br>
+					&lt;Destinatario&gt;<br>
+					&lt;Nombre>Nombre del destinatario&lt;/Nombre&gt;<br>
+					&lt;Mail>Correo del destinatario&lt;/Mail&gt;<br>
+					&lt;/Destinatario&gt;<br>
+					&lt;Texto&gt;<br>
+					&lt;Asunto&gt;<br>
+					ASUNTO<br>
+					&lt;/Asunto&gt;<br>
+					&lt;Parrafo&gt;<br>
+						Este es mi documento con una estructura muy sencilla ...<br>
+					&lt;/Parrafo&gt;<br>
+					&lt;/Texto&gt;<br>
+					&lt;/Mensaje&gt;<br>
+					&lt;/Edit_Mensaje&gt;<br><br>
+				</p>
+			</article>
+		<footer>
+			<p>Copyright &copy; 2020. Todos los derechos reservados.</p>
+		</footer>
+    </body>
+</html>

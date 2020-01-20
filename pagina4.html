@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jordi Bernaus</title>
+		<link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+			<h2>Formulario</h2>
+		</header>
+			<nav>
+				<ul>
+					<li><a href="index.html">ASIR</a></li>
+					<li><a href="pagina1.html">LND</a></li>
+					<li><a href="pagina2.html">FUW</a></li>
+					<li><a href="pagina3.html">C.I.F.P. Majada Marcial</a></li>
+					<li><a href="pagina4.html">¿Alguna duda sobre el ciclo o el centro?</a></li>
+					<li><a href="pagina5.html">Hubicación</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h3 class="h3">Rellene el cuestionario para solicitar información del ciclo en este centro</h3>
+				<form action="cv@gmail.com" method="post">
+        <fieldset>
+            <legend>Datos pesonales</legend>
+            <table>
+            <tr>
+                <td class="tdformulario"><label>DNI:</label></td>
+                <td class="tdformulario"><input type="text" maxlength="13" required placeholder="11.11.11.11-X" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Nombre:</label></td>
+                <td class="tdformulario"><input type="text" pattern="[A-Za-z]{20}" autocomplete="on" required></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Apellido 1:</label></td>
+                <td class="tdformulario"><input type="text" pattern="[A-Za-z]{30}" autocomplete="on" required></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Apellido 2:</label></td>
+                <td class="tdformulario"><input type="text" pattern="[A-Za-z]{30}" autocomplete="on" required></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Código Postal:</label></td>
+                <td class="tdformulario"><input type="text" pattern="[0-9]{6}" placeholder="111111" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Dirección y Población:</label></td>
+                <td class="tdformulario"><input maxlength="50"></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Provincia:</label></td>
+                <td class="tdformulario"><select>
+                    <option>Las Palmas</option>
+                    <option>St. Cruz de Tenerife</option>
+                    <option>Cádiz</option>
+                    <option selected>Ferrol</option>
+                    <option>Madrid</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Fecha de Nacimiento:</label></td>
+                <td class="tdformulario"><input type="date"></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Sexo:</label></td>
+                <td class="tdformulario">
+					<input name="sexo" value="hombre" type="radio" required>Hombre
+                    <input name="sexo" value="mujer" type="radio" required>Mujer
+				</td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Telefono:</label></td>
+                <td class="tdformulario"><input placeholder="999-999-999" type="tel" maxlength="13" required></td>
+            <tr>
+                <td class="tdformulario"><label>Email:</label></td>
+                <td class="tdformulario"><input type="text"></td>
+            </tr>
+            </table>
+    </fieldset>
+        <fieldset>
+            <legend>Acceso al portal</legend>
+            <table>
+                <tr>
+                    <td class="tdformulario"><label>Usuario</label></td>
+                    <td class="tdformulario"><input type="text" required maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td class="tdformulario"><label>Contraseña:</label></td>
+                    <td class="tdformulario"><input type="password" required maxlength="10"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Formación y Experiencia Laboral</legend>
+            <table>
+                <tr>
+                    <td class="tdformulario"><label>Estudios cursados:</label></td>
+                <td class="tdformulario"><select>
+                    <option>CICLO GRADO MEDIO</option>
+                    <option>CICLO GRADO SUPERIOR</option>
+                    <option>UNIVERSITARIOS</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td class="tdformulario"><label>Titulo:</label></td>
+                    <td class="tdformulario"><input type="text" required></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Experiencia laboral:</label></td>
+                <td class="tdformulario">
+					<input name="exp" value="si" type="radio" required>Si
+                    <input name="exp" value="no" type="radio" required>No
+				</td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Idiomas: </label></td>
+                <td class="tdformulario"><select size="4" multiple>
+                    <option>Español</option>
+                    <option>Inglés</option>
+                    <option>Francés</option>
+                    <option>Alemán</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td class="tdformulario"><label>Curriculum:</label></td>
+                <td class="tdformulario"><input type="file"></td>
+            </tr>
+        </table>
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <table>
+                <tr>
+                    <td class="tdformulario"><label>Otros datos:</label></td>
+                    <td class="tdformulario"><textarea placeholder="Indica aqui cualquier otra información" rows="9" cols="60"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+			<input class="centrarboton" type="submit" value="Enviar">
+    </form>
+			</article>
+		<footer>
+			<p>Copyright &copy; 2020. Todos los derechos reservados.</p>
+		</footer>
+    </body>
+</html>
